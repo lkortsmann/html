@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ülesanne 10</title>
+</head>
+<body>
+
+<h1>ÕPILASE REGISTREERIMISVORM</h1>
+
+<form>
+<fieldset>
+<legend>Isikuandmed</legend>
+
+<label>Eesnimi</label><br>
+<input type="text" name="eesnimi" maxlength="30" placeholder="nt Laura" required><br><br>
+
+<label>Perenimi</label><br>
+<input type="text" name="perenimi" maxlength="30" placeholder="nt Kortsmann" required><br><br>
+
+<label>Sünnikuupäev</label><br>
+<input type="date" name="synni" min="1950-01-01" max="2025-12-31" value="1980-01-01" required><br><br>
+
+<label>Sugu</label><br>
+<input type="radio" name="sugu" value="Naine" required> Naine
+<input type="radio" name="sugu" value="Mees"> Mees
+<input type="radio" name="sugu" value="Muu"> Muu
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Kontakt</legend>
+
+<label>E-post</label><br>
+<input type="email" name="email" maxlength="100" placeholder="nt nimi@hkhk.edu.ee" required><br><br>
+
+<label>Mobiiltelefon</label><br>
+<input type="tel" name="telefon" placeholder="+372 55566678" pattern="^\+372\s?\d{7,8}$" required><br><br>
+
+<label>Aadress</label><br>
+<textarea name="aadress" placeholder="Tänav, maja, korter"></textarea><br><br>
+
+<label>Linn / asula</label><br>
+<input type="text" name="linn" maxlength="30" placeholder="nt Tallinn" required><br><br>
+
+<label>Postiindeks</label><br>
+<input type="text" name="postiindeks" placeholder="nt 10321" pattern="^\d{5}$" required><br><br>
+
+<label>Riik</label><br>
+<input type="text" name="riik" value="Eesti" readonly>
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Muu info</legend>
+
+<label>Huvialad</label><br>
+<input type="checkbox" name="huvi" value="Joonistamine"> Joonistamine
+<input type="checkbox" name="huvi" value="Laulmine"> Laulmine
+<input type="checkbox" name="huvi" value="Tantsimine"> Tantsimine
+<input type="checkbox" name="huvi" value="Kokkamine"> Kokkamine
+<br>
+
+<input type="checkbox" name="huvi_muu_chk" value="1"> Muu:
+<input type="text" name="huvi_muu" maxlength="30" placeholder="täpsusta (kuni 30 märki)">
+<br><br>
+
+
+<label>Isiklik veebileht</label><br>
+<input type="url" name="veeb" value="https://lilled.ee"><br><br>
+
+<label>Eelistatud teemavärv (valikuline)</label><br>
+<input type="color" name="varv" value="#0000ff"><br><br>
+
+<label>Dokumendid (PDF või pilt)</label><br>
+<input type="file" name="doc" accept="application/pdf,image/*">
+</fieldset>
+
+<br>
+
+<fieldset>
+<legend>Nõustumine</legend>
+<label>
+<input type="checkbox" name="noustun" required>
+Kinnitan, et esitatud andmed on õiged ja luban nende töötlemist vastavalt kooli tingimustele.
+</label>
+</fieldset>
+
+<br>
+<button type="submit">Saada</button>
+<button type="reset">Tühjenda</button>
+
+</form>
+
+</body>
+</html>
+
+
