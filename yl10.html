@@ -68,7 +68,6 @@
 <input type="text" name="huvi_muu" maxlength="30" placeholder="täpsusta (kuni 30 märki)">
 <br><br>
 
-
 <label>Isiklik veebileht</label><br>
 <input type="url" name="veeb" value="https://lilled.ee"><br><br>
 
@@ -76,13 +75,12 @@
 <input type="color" name="varv" value="#0000ff"><br><br>
 
 <label>Dokumendid (PDF või pilt)</label><br>
+<input type="file" name="dokumendid" accept="application/pdf,image/*"><br>
+<small>(lubada PDF ja pildid)</small>
 
-<input type="file"
-       name="dokumendid"
-       accept="application/pdf,image/*">
+</fieldset>  <!-- ✅ SEE PUUDUS SUL -->
+
 <br>
-(lubada PDF ja pildid)
-
 
 <fieldset>
 <legend>Nõustumine</legend>
@@ -100,6 +98,8 @@ Kinnitan, et esitatud andmed on õiged ja luban nende töötlemist vastavalt koo
 
 </body>
 </html>
+
+
 
 
 
